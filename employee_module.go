@@ -1,4 +1,4 @@
-package main
+package employeemodule
 
 import (
 	"fmt"
@@ -33,7 +33,7 @@ func (e *Employee) AddEmployee() error {
 	if err := e.validate(); err != nil {
 		return err
 	}
-	// now we do some opertaion here , adding data to database
+	// now we do some opertaion herie , adding data to database
 	//sql qurries
 	e.createDBOjects()
 
